@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/fragment_plant_pic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/fragment_plant_name_ch"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:id="@+id/fragment_plant_name_ch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_name_en"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_pic"
+            tools:text="玫瑰" />
+
+        <TextView
+            android:id="@+id/fragment_plant_name_en"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_also_name_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_name_ch"
+            tools:text="QQQ" />
+
+        <TextView
+            android:id="@+id/fragment_plant_also_name_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/fragment_plant_also_known"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_also_name"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_name_en"
+            tools:text="別名" />
+
+        <TextView
+            android:id="@+id/fragment_plant_also_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_brief_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_also_name_label"
+            tools:text="玫瑰花" />
+
+        <TextView
+            android:id="@+id/fragment_plant_brief_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/fragment_plant_brief"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_brief"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_also_name"
+            tools:text="簡介" />
+
+        <TextView
+            android:id="@+id/fragment_plant_brief"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_feature_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_brief_label"
+            tools:text="簡介" />
+
+        <TextView
+            android:id="@+id/fragment_plant_feature_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/fragment_plant_feature"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_feature"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_brief"
+            tools:text="辨識方法" />
+
+        <TextView
+            android:id="@+id/fragment_plant_feature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_function_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_feature_label"
+            tools:text="辨識方法" />
+
+        <TextView
+            android:id="@+id/fragment_plant_function_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:text="@string/fragment_plant_function"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_function"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_feature"
+            tools:text="功能性" />
+
+        <TextView
+            android:id="@+id/fragment_plant_function"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintBottom_toTopOf="@id/fragment_plant_update_time_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_function_label"
+            tools:text="功能性" />
+
+        <TextView
+            android:id="@+id/fragment_plant_update_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/fragment_plant_update_time"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fragment_plant_function"
+            tools:text="更新時間" />
+
+        <TextView
+            android:id="@+id/fragment_plant_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            app:layout_constraintLeft_toRightOf="@id/fragment_plant_update_time_label"
+            app:layout_constraintTop_toTopOf="@id/fragment_plant_update_time_label"
+            tools:text="更新時間" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

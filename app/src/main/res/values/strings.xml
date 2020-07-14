@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">"台北市立動物園"</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="fragment_plant_also_known">別名</string>
+    <string name="fragment_plant_brief">簡介</string>
+    <string name="fragment_plant_function">功能性</string>
+    <string name="fragment_plant_update_time">更新時間</string>
+    <string name="fragment_plant_feature">辨識方法</string>
+    <string name="district_arrow">">"</string>
+    <string name="fragment_district_web">"在網頁開啟"</string>
+    <string name="fragment_district_plant_title">"植物資料"</string>
+</resources>
