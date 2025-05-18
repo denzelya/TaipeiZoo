@@ -1,7 +1,8 @@
 
+Taipei Zoo Guide App  
 
-Taipei Zoo Guide App
 This is an Android application designed to help users explore and learn more about the different areas and plant life within the Taipei Zoo. The app provides an interactive experience with detailed information about zoo zones and the plants found in each.
+<p>&nbsp;</p>
 
 App Screens Overview
 
@@ -21,9 +22,9 @@ This screen presents detailed information about a selected zone, including its t
 Within each zone, users can tap on specific plants to view comprehensive information including the plant's name, scientific name, habitat, unique characteristics, and images.
 
 <img src="https://github.com/user-attachments/assets/f13eb0e9-8fdc-4e26-94df-d98965abe6a6" alt="Plant Detail Screen" width="300"/>
+<p>&nbsp;</p>
 
-Tech Stack
-Platform: Android
-Language: Kotlin
-Architecture: MVVM with Jetpack components
-Data Sources: Open data and educational content from Taipei Zoo
+Tech Stack  
+Platform: Android  
+Language: Kotlin  
+Data Sources: Open data and educational content from Taipei Zoo  
